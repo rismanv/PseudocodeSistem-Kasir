@@ -1,0 +1,33 @@
+Program Sistem_Kasir
+Deklarasi NamaBarang, JumlahBarang, HargaBarang, KodeBarang, TotalHarga, UangKembalian, Pembayaran
+If KodeBarang == 001
+	NamaBarang = "Kecap"
+	HargaBarangSatuan001 = 6000
+Write("Masukkan Jumlah Barang : ")
+Read(jumlah001)
+TotalHarga001 = HargaBarangSatuan*Jumlah001
+Status=false;break
+	End If
+Else If KodeBarang == 002
+	NamaBarang = "Saos"
+	HargaBarangSatuan002 = 8000
+Write("Masukkan Jumlah Barang : ")
+Read(Jumlah002)
+TotalHarga002 = HargaBarangSatuan002*Jumlah002
+Status=false;break
+	End If
+End While
+TotalHarga = Harga001 + Harga002
+Write ln("Total Bayar : " +Total )
+Write("Masukkan Nilai Pembayaran : ")
+Read(Pembayaran)
+Read(spasi)
+Kembali = Pembayaran-TotalHarga
+If(kembali<=0)
+           Write ln("Maaf, Pembayaran Kurang Sebesar "+Kembali)
+           Write("Masukkan Pembayaran Tambahan : ")
+           Read(UangTambah)
+           Tunai = Pembayaran+UangTambah
+           Kembali = Pembayaran-TotalHarga
+	End IF
+End
